@@ -1,0 +1,19 @@
+*~
+*\#
+*.elc
+
+.emacs.d/bookmarks
+.emacs-bmk-bmenu-state.el
+
+#linux stuff
+.*/
+/.*
+/*/
+
+#windows stuff
+ntuser*
+_viminfo
+Xdefaults
+
+!.emacs.d/
+!.gitignore
