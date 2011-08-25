@@ -1,11 +1,14 @@
 ;; dcl emacs setup
 
+(windmove-default-keybindings 'super)
+
 ;; Basic visual customisation
 ;;;(set-default-font "Bitstream Vera Sans Mono-10")
 ;; Setup for ido.el
-(require 'ido)
-(ido-mode t)
-(setq ido-enable-flex-matching t)
+;(require 'ido)
+;ido-mode t)
+;(setq ido-enable-flex-matching t)
+
 ;; Setup for AsciiDoc doc-mode
 ;;;(require 'doc-mode)
 ;;;(add-to-list 'auto-mode-alist '("\\.adoc$" . doc-mode))

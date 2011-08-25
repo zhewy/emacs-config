@@ -1,1 +1,1 @@
-(load "dcl.el" 'noerror)
+(load "~/.emacs.d/dcl.el" 'noerror)
