@@ -1,4 +1,5 @@
 (tool-bar-mode -1)
+(put 'dired-find-alternate-file 'disabled nil)
 
 (require 'org-install)
 
