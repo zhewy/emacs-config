@@ -1,5 +1,6 @@
 (tool-bar-mode -1)
 (put 'dired-find-alternate-file 'disabled nil)
+(setq calendar-week-start-day 1)
 
 (require 'org-install)
 
