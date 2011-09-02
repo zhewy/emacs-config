@@ -2,6 +2,8 @@
 
 (windmove-default-keybindings 'super)
 
+(require 'xcscope)
+
 ;; Basic visual customisation
 ;;;(set-default-font "Bitstream Vera Sans Mono-10")
 ;; Setup for ido.el
