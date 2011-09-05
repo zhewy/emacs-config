@@ -13,5 +13,13 @@
 
 (windmove-default-keybindings 'super)
 
+(require 'xcscope)
+
 ;;; Python Dev
 (setq python-python-command "python3")
+
+;;; Perl Dev
+;;; cperl-mode is preferred to perl-mode                                        
+(defalias 'perl-mode 'cperl-mode)
+(setq cperl-mode-hook (function cscope:hook))
+
