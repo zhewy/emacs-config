@@ -22,4 +22,4 @@
 ;;; cperl-mode is preferred to perl-mode                                        
 (defalias 'perl-mode 'cperl-mode)
 (setq cperl-mode-hook (function cscope:hook))
-
+(require 'perldoc)
