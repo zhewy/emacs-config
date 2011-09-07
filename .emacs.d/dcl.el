@@ -2,7 +2,9 @@
 
 (windmove-default-keybindings 'super)
 
-(require 'xcscope)
+;;; *****************************
+;;; DCL template ****************
+;;; *****************************
 
 ;; Basic visual customisation
 ;;;(set-default-font "Bitstream Vera Sans Mono-10")
@@ -55,6 +57,24 @@
 		  (auto-fill-mode 1)
 		  (flyspell-mode 1)))
 
-
 ;; key bindings
 (global-set-key [(control .)] 'tags-search) ;Regex through files in tag table.
+
+
+
+
+;;; *****************************
+;;; TAGS         ****************
+;;; *****************************
+
+;;; xcscope
+(require 'xcscope)
+
+;;; gtags
+(autoload 'gtags-mode "gtags" "" t)
+(add-hook 'c-mode-hook
+	  '(lambda ()
+	     (gtags-mode 1)
+	     ))
+(global-set-key "\C-cdt" 'gtags-find-with-grep)
+(global-set-key "\C-cdc" 'gtags-find-rtag)
