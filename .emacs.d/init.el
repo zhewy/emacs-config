@@ -1,3 +1,7 @@
+;;; GENERIC init file
+;;;  - sets up local directories
+;;;  - calls init file depending on which computer run from
+
 (require 'cl) ; a rare necessary use of REQUIRE
 
 (defvar *emacs-load-start* (current-time))
