@@ -3,7 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/Dropbox/org/org.org"))))
+ '(org-agenda-files (quote ("~/Dropbox/dcl/personal.org" "~/Dropbox/org/org.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -11,4 +11,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+(load "~/.emacs.d/win-general.el")
+
 (windmove-default-keybindings 'control)
+
