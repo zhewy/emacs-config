@@ -1,6 +1,7 @@
 *~
 *\#
 *.elc
+*.xml
 
 .emacs.d/bookmarks
 .emacs-bmk-bmenu-state.el
