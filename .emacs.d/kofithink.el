@@ -19,7 +19,7 @@
        ("Personal" ?p "* TODO %? %^g\n %i\n " 
 	"~/Dropbox/zShare/personal/personal.org" "=inbox=")
        ("DCL" ?d "* TODO %? %^g\n %i\n " 
-	"~/Dropbox/zShare/work/dcl.org" "inbox")
+	"~/Dropbox/zShare/work/dcl.org" "=inbox=")
        ("Journal"   ?j "** %^{Head Line} %U %^g\n%i%?"  
 	"~/Dropbox/zPersonal/journal.org")
        ))
