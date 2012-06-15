@@ -6,22 +6,22 @@
 (setq org-agenda-custom-commands 
       '(
 	("p" "Personal" agenda ""
-         ((org-agenda-files '("~/Dropbox/zShare/personal/personal.org"))) )
+         ((org-agenda-files '("c:/z/Dropbox/zShare/personal/personal.org"))) )
 	("d" "DCL" agenda ""
-         ((org-agenda-files '("~/Dropbox/zShare/work/dcl.org"))) )
+         ((org-agenda-files '("c:/z/Dropbox/zShare/work/org/dcl.org"))) )
         ))
 
 ;; remember customise
-;(setq org-directory "~/Dropbox/org/")
-;(setq org-default-notes-file "~/Dropbox/org/inbox.org")
+;(setq org-directory "c:/z/Dropbox/org/")
+;(setq org-default-notes-file "c:/z/Dropbox/org/inbox.org")
 (setq org-remember-templates
      '(
        ("Personal" ?p "* TODO %? %^g\n %i\n " 
-	"~/Dropbox/zShare/personal/personal.org" "=inbox=")
+	"c:/z/Dropbox/zShare/personal/personal.org" "=inbox=")
        ("DCL" ?d "* TODO %? %^g\n %i\n " 
-	"~/Dropbox/zShare/work/dcl.org" "=inbox=")
+	"c:/z/Dropbox/zShare/work/dcl.org" "=inbox=")
        ("Journal"   ?j "** %^{Head Line} %U %^g\n%i%?"  
-	"~/Dropbox/zPersonal/journal.org")
+	"c:/z/Dropbox/zPersonal/journal.org")
        ))
 
 ;; mj-map hyperlink types define
