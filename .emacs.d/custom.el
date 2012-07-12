@@ -8,7 +8,6 @@
 (setq framemove-hook-into-windmove t)
 
 (require 'bookmark+)
-(require 'buff-menu+)
 
 ;; org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))

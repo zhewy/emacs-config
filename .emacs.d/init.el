@@ -2,7 +2,8 @@
 ;;;  - sets up local directories
 ;;;  - calls init file depending on which computer run from
 
-(require 'cl) ; a rare necessary use of REQUIRE
+; 12/7/12 commented out - don't know what it is used for. see if breaks anything
+;(require 'cl) ; a rare necessary use of REQUIRE
 
 (defvar *emacs-load-start* (current-time))
 
@@ -27,7 +28,7 @@
 (setq this-system-name (car (split-string system-name "\\.")))
 (setq system-specific-config (concat dotfiles-dir this-system-name ".el"))
 
-;;; recursive local site-lisp
+;; recursive local site-lisp
 (add-to-list 'load-path my-site-lisp-dir)
 (let ((default-directory  my-site-lisp-dir))
   (setq load-path
@@ -39,7 +40,7 @@
 ;; customise file
 (load my-custom-file 'noerror)
 
-;; system specific file load
+; system specific file load
 (if (file-exists-p system-specific-config) (load system-specific-config))
 
 (message "My .emacs loaded in %ds" (destructuring-bind (hi lo ms) (current-time)
