@@ -23,3 +23,15 @@
        ("Journal"   ?j "** %^{Head Line} %U %^g\n%i%?"  
 	"~/Dropbox/zWork/journal.org")
        ))
+
+;; mj-map hyperlink types define
+(require 'org)
+(org-add-link-type "mj-map" 'org-mj-map-open)
+(defun org-mj-map-open (path)
+       ""
+       (shell-command (concat "cmd /c start mj-map:" path)))
+;; notes hyperlink types define
+(org-add-link-type "Notes" 'org-notes-open)
+(defun org-notes-open (path)
+       ""
+       (shell-command (concat "cmd /c start Notes:" path)))
