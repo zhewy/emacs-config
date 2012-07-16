@@ -1,4 +1,4 @@
-(windmove-default-keybindings 'control)
+(windmove-default-keybindings 'super)
 
 ;; org customise
 (setq org-agenda-custom-commands 
