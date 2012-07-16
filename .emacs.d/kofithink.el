@@ -4,7 +4,7 @@
 (setq org-agenda-custom-commands 
       '(
 	("p" "Personal" agenda ""
-         ((org-agenda-files '("c:/z/Dropbox/zShare/personal/personal.org"))) )
+         ((org-agenda-files '("c:/z/Dropbox/zShare/personal/org/personal.org"))) )
 	("d" "DCL" agenda ""
          ((org-agenda-files '("c:/z/Dropbox/zShare/work/org/dcl.org"))) )
         ))
@@ -15,11 +15,11 @@
 (setq org-remember-templates
      '(
        ("Personal" ?p "* TODO %? %^g\n %i\n " 
-	"c:/z/Dropbox/zShare/personal/personal.org" "=inbox=")
+	"c:/z/Dropbox/zShare/personal/org/personal.org" "=inbox=")
        ("DCL" ?d "* TODO %? %^g\n %i\n " 
 	"c:/z/Dropbox/zShare/work/dcl.org" "=inbox=")
        ("Journal"   ?j "** %^{Head Line} %U %^g\n%i%?"  
-	"c:/z/Dropbox/zPersonal/journal.org")
+	"c:/z/Dropbox/zPersonal/org/journal.org")
        ))
 
 ;; mj-map hyperlink types define
