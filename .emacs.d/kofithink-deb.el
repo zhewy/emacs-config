@@ -22,3 +22,5 @@
 	"/media/sf_Z/Dropbox/zPersonal/org/journal.org")
        ))
 
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'taskjuggler-mode)
