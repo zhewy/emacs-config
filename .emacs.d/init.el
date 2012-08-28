@@ -2,9 +2,6 @@
 ;;;  - sets up local directories
 ;;;  - calls init file depending on which computer run from
 
-; 12/7/12 commented out - don't know what it is used for. see if breaks anything
-;(require 'cl) ; a rare necessary use of REQUIRE
-
 (defvar *emacs-load-start* (current-time))
 
 (custom-set-variables
@@ -46,5 +43,5 @@
 ; system specific file load
 (if (file-exists-p system-specific-config) (load system-specific-config))
 
-;(message "My .emacs loaded in %ds" (destructuring-bind (hi lo ms) (current-time)
-;				     (- (+ hi lo) (+ (first *emacs-load-start*) (second *emacs-load-start*)))))
+(message "My .emacs loaded in %ds" (destructuring-bind (hi lo ms) (current-time)
+				     (- (+ hi lo) (+ (first *emacs-load-start*) (second *emacs-load-start*)))))
