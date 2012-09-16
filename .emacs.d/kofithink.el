@@ -1,5 +1,14 @@
 (windmove-default-keybindings 'control)
 
+;; babel
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((ledger . t)         ;this is the important one for this tutorial
+   ))
+
+;; agenda customise
+(setq org-directory "c:/z/Dropbox/org/")
+
 ;; org customise
 (setq org-agenda-custom-commands 
       '(
@@ -10,7 +19,6 @@
         ))
 
 ;; remember customise
-;(setq org-directory "c:/z/Dropbox/org/")
 ;(setq org-default-notes-file "c:/z/Dropbox/org/inbox.org")
 (setq org-remember-templates
      '(

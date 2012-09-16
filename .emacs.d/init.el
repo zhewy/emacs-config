@@ -10,7 +10,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(indent-tabs-mode nil)
- '(org-agenda-files "c:/z/Dropbox/agenda-files")
  '(org-special-ctrl-a/e t)
  '(tab-width 2))
 (custom-set-faces
