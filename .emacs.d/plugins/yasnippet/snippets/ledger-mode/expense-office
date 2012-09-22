@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: expense-office
+# binding: C-c C-c C-o
+# --
+
+$1 $0
+ assets:bank  -\$$2
+ expense:family:house running costs  \$$2*.94
+ assets:ird:gst  \$$2*.06*3/23
+ expense:gp:other

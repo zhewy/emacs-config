@@ -43,3 +43,10 @@
 (defun org-mj-map-open (path)
        ""
        (shell-command (concat "cmd /c start mj-map:" path)))
+
+;; yassnippet
+(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas/global-mode 1)
+(setf yas/indent-line nil)
+(yas/load-directory "~/.emacs.d/plugins/yasnippet/snippets")
