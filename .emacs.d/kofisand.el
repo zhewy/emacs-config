@@ -1,4 +1,4 @@
-(windmove-default-keybindings 'super)
+(windmove-default-keybindings 'control)
 
 ;; ledger
 (load "ledger")

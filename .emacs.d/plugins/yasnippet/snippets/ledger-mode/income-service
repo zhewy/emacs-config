@@ -1,8 +1,8 @@
 # name: income-service
-# binding: C-c C-c C-i
+# binding: C-c C-c g s
 # --
 
 $1 halswell health
  assets:001 revolving  \$$2
- liabilities:ird:gst  -\$$2*3/23
+ liabilities:ird:gst  (-\$$2*3/23)
  income:gp:services

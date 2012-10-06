@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: expense-other
-# binding: C-c C-c C-m
-# --
-
-$1 $0
- assets:mastercard  -\$$2
- assets:ird:gst  \$$2*3/23
- expense:gp:other
