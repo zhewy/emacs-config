@@ -1,0 +1,9 @@
+# name: expense-telephone
+# binding: C-c C-c e t
+# --
+
+$1 telstraclear
+ account  -\$$2
+ assets:ac receivable:ird:gst  (\$78/2*3/23)
+ expenses:gp:other  (\$78/2*20/23)
+ expenses:telephone

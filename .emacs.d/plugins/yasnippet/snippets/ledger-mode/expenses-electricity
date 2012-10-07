@@ -1,0 +1,9 @@
+# name: expense-electricity
+# binding: C-c C-c e e
+# --
+
+$1 genesis energy
+ assets:ac receivable:ird:gst  (\$$2*0.05*3/23)
+ expenses:gp:other  (\$$2*0.05*20/23)
+ expenses:electricity  (\$$2*0.95)
+ account

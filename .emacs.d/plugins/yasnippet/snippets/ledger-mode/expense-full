@@ -1,0 +1,8 @@
+# name: expense-full
+# binding: C-c C-c e f
+# --
+
+$1 $2
+ assets:4901 mastercard  -\$$3
+ assets:ac receivable:ird:gst  (\$$3*3/23)
+ expenses:gp:$0  (\$$3*20/23)
