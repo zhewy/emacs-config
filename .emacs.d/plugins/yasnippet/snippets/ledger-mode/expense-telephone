@@ -3,6 +3,7 @@
 # --
 
 $1 telstraclear
+  ; :GP:EXP:
  account  -\$$2
  assets:ac receivable:ird:gst  (\$78/2*3/23)
  expenses:gp:other  (\$78/2*20/23)

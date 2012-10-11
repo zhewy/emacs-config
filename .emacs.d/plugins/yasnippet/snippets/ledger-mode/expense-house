@@ -3,6 +3,7 @@
 # --
 
 $1 ccc
+  ; :GP:EXP:
  assets:ac receivable:ird:gst  (\$$2*0.05*3/23)
  expenses:gp:rates  (\$$2*0.05*20/23)
  expenses:house:rates  (\$$2*0.95)

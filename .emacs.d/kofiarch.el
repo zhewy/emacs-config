@@ -11,6 +11,7 @@
    (ledger . t)         ;this is the important one for this tutorial
    (sh . t)
    (python . t)
+   (calc . t)
    ))
 
 ;; agenda customise
