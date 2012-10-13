@@ -1,4 +1,8 @@
-(windmove-default-keybindings 'control)
+;(windmove-default-keybindings 'control)
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <down>")  'windmove-down)
 
 ;; ledger
 (load "ledger")
@@ -15,15 +19,13 @@
    ))
 
 ;; agenda customise
-(setq org-directory "/media/sf_Z/Dropbox/")
+(setq org-directory "~/Dropbox/")
 
 ;; org customise
 (setq org-agenda-custom-commands 
       '(
 	("p" "Personal" agenda ""
-         ((org-agenda-files '("/media/sf_Z/Dropbox/zShare/personal/org/personal.org"))) )
-	("d" "DCL" agenda ""
-         ((org-agenda-files '("/media/sf_Z/Dropbox/zShare/work/org/dcl.org"))) )
+         ((org-agenda-files '("~/Dropbox/zShare/personal/org/personal.org"))) )
         ))
 
 ;; remember customise
@@ -31,19 +33,8 @@
 (setq org-remember-templates
      '(
        ("Personal" ?p "* TODO %? %^g\n %i\n " 
-	"/media/sf_Z/Dropbox/zShare/personal/org/personal.org" "=inbox=")
-       ("DCL" ?d "* TODO %? %^g\n %i\n " 
-	"/media/sf_Z/Dropbox/zShare/work/dcl.org" "=inbox=")
-       ("Journal"   ?j "** %^{Head Line} %U %^g\n%i%?"  
-	"/media/sf_Z/Dropbox/zPersonal/org/journal.org")
+	"~/Dropbox/zShare/personal/org/personal.org" "=inbox=")
        ))
-
-;; mj-map hyperlink types define
-(require 'org)
-(org-add-link-type "mj-map" 'org-mj-map-open)
-(defun org-mj-map-open (path)
-       ""
-       (shell-command (concat "cmd /c start mj-map:" path)))
 
 ;; yassnippet
 (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
