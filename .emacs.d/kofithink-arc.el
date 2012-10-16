@@ -42,3 +42,9 @@
 (yas/global-mode 1)
 (setf yas/indent-line nil)
 (yas/load-directory "~/.emacs.d/plugins/yasnippet/snippets")
+
+;; load pdfs in evince
+(eval-after-load "org"
+  '(progn
+     ;; Change .pdf association directly within the alist
+     (setcdr (assoc "\\.pdf\\'" org-file-apps) "evince %s")))
