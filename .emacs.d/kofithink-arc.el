@@ -1,8 +1,8 @@
-;(windmove-default-keybindings 'control)
-(global-set-key (kbd "C-c <left>")  'windmove-left)
-(global-set-key (kbd "C-c <right>") 'windmove-right)
-(global-set-key (kbd "C-c <up>")    'windmove-up)
-(global-set-key (kbd "C-c <down>")  'windmove-down)
+(windmove-default-keybindings 'control)
+;(global-set-key (kbd "C-c <left>")  'windmove-left)
+;(global-set-key (kbd "C-c <right>") 'windmove-right)
+;(global-set-key (kbd "C-c <up>")    'windmove-up)
+;(global-set-key (kbd "C-c <down>")  'windmove-down)
 
 ;; ledger
 (load "ledger")
@@ -18,15 +18,15 @@
    (calc . t)
    ))
 
-;; agenda customise
-(setq org-directory "~/Dropbox/")
-
 ;; org customise
 (setq org-agenda-custom-commands 
       '(
 	("p" "Personal" agenda ""
          ((org-agenda-files '("~/Dropbox/zShare/personal/org/personal.org"))) )
         ))
+
+(setq org-link-file-path-type "relative")
+(setq org-agenda-files '("~/Documents/org/"))
 
 ;; remember customise
 ;(setq org-default-notes-file "c:/z/Dropbox/org/inbox.org")
@@ -48,3 +48,5 @@
   '(progn
      ;; Change .pdf association directly within the alist
      (setcdr (assoc "\\.pdf\\'" org-file-apps) "evince %s")))
+
+(require 'color-moccur)

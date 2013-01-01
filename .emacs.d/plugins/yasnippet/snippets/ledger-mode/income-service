@@ -4,6 +4,6 @@
 
 $1 halswell health
   ; :GP:INC:
- assets:001 revolving  \$$2
+ account  \$$2
  liabilities:ird:gst  (-\$$2*3/23)
  income:gp:services
