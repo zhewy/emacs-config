@@ -3,9 +3,11 @@
 ;;;  - calls init file depending on which computer run from
 ;;; call order: init.el -> custom.el -> computer_name.el
 
+(require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -14,7 +16,7 @@
  ;; If there is more than one, they won't work right.
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(indent-tabs-mode nil)
- '(org-agenda-files (quote ("~/Dropbox/org/personal.org")))
+ '(org-agenda-files (quote ("c:/Users/Zhuhui/Dropbox/org/personal.org")))
  '(org-special-ctrl-a/e t)
  '(tab-width 2))
 (custom-set-faces

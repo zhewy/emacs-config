@@ -1,38 +1,19 @@
-(windmove-default-keybindings 'control)
+(require 'cl)
 
-;; babel
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((ledger . t)         ;this is the important one for this tutorial
-   ))
+(require 'dired+)
 
-;; agenda customise
-(setq org-directory "c:/z/Dropbox/org/")
+(require 'dired-details)
+(dired-details-install)
 
-;; org customise
-(setq org-agenda-custom-commands 
-      '(
-	("p" "Personal" agenda ""
-         ((org-agenda-files '("c:/z/Dropbox/zShare/personal/org/personal.org"))) )
-	("d" "DCL" agenda ""
-         ((org-agenda-files '("c:/z/Dropbox/zShare/work/org/dcl.org"))) )
-        ))
+;(windmove-default-keybindings 'control)
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <down>")  'windmove-down)
 
-;; remember customise
-;(setq org-default-notes-file "c:/z/Dropbox/org/inbox.org")
-(setq org-remember-templates
-     '(
-       ("Personal" ?p "* TODO %? %^g\n %i\n " 
-	"c:/z/Dropbox/zShare/personal/org/personal.org" "=inbox=")
-       ("DCL" ?d "* TODO %? %^g\n %i\n " 
-	"c:/z/Dropbox/zShare/work/dcl.org" "=inbox=")
-       ("Journal"   ?j "** %^{Head Line} %U %^g\n%i%?"  
-	"c:/z/Dropbox/zPersonal/org/journal.org")
-       ))
-
-;; mj-map hyperlink types define
-(require 'org)
-(org-add-link-type "mj-map" 'org-mj-map-open)
-(defun org-mj-map-open (path)
-       ""
-       (shell-command (concat "cmd /c start mj-map:" path)))
+;;; mj-map hyperlink types define
+;(require 'org)
+;(org-add-link-type "mj-map" 'org-mj-map-open)
+;(defun org-mj-map-open (path)
+;       ""
+;       (shell-command (concat "cmd /c start mj-map:" path)))
